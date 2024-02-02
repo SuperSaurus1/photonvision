@@ -276,6 +276,7 @@ const setSelectedVideoFormat = (format: VideoFormat) => {
               :disabled="isCalibrating"
               tooltip="Resolution to calibrate at (you will have to calibrate every resolution you use 3D mode on)"
               :items="getUniqueVideoResolutionStrings()"
+              console.log(useStateStore().CalibrationData.videoFormatIndex);
             />
             <pv-select
               v-show="isCalibrating"
